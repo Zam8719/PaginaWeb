@@ -1,0 +1,66 @@
+body{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "img nombre p" "Descripcion Descripcion Descripcion" "Competencias Competencias Competencias" "educacion educacion educacion" "experiencias experiencias experiencias";
+    background-image: url(Fondo_azul.jpg);
+    font-family: 'Assistant', sans-serif;
+    padding: 5%;
+}
+
+
+div.img{
+    grid-area: img;
+    grid-column: 1/3;
+}
+div.nombre{
+    grid-area: nombre;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20%;
+    font-size: 40;
+}
+div.img img{
+    width: 30%;
+    border-radius: 50%;
+    padding: 30px;
+    text-align: right;
+}
+div.vias{
+    grid-area: p;
+    grid-row: 1;
+    padding-top: 38%;
+}
+div.vias p img.llamada:hover{
+    content: url(llamada-respuesta_rojo.png);
+}
+div.vias p img.direccion:hover{
+    content: url(direccion_1.png);
+}
+div.vias p img.correo:hover{
+    content: url(sobre_1.png);
+}
+div.vias p{
+    text-align: right;
+}
+div.vias a{
+    text-decoration: none;
+    color: black;
+}
+div.vias img{
+    text-align: right;
+    width: 10%;
+}
+div.descripcion{
+    border-top: 1px solid black;
+    grid-area: Descripcion;
+}
+div.competencias{
+    grid-area: Competencias;
+}
+div.educacion{
+    grid-area: educacion;
+}
+div.experiencias{
+    grid-area: experiencias;
+}
