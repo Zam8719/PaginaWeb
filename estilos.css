@@ -29,7 +29,7 @@ div.img img{
 div.vias{
     grid-area: p;
     grid-row: 1;
-    padding-top: 38%;
+    padding-top: 8%;
 }
 div.vias p img.llamada:hover{
     content: url(llamada-respuesta_rojo.png);
@@ -43,10 +43,6 @@ div.vias p img.correo:hover{
 div.vias p{
     text-align: right;
 }
-div.vias a{
-    text-decoration: none;
-    color: black;
-}
 div.vias img{
     text-align: right;
     width: 10%;
@@ -55,12 +51,28 @@ div.descripcion{
     border-top: 1px solid black;
     grid-area: Descripcion;
 }
+div.descripcion p{
+    color: white;
+}
 div.competencias{
+    border-top: 1px solid black;
     grid-area: Competencias;
 }
+div.competencias ul{
+    color: white; 
+}
 div.educacion{
+    border-top: 1px solid black;
     grid-area: educacion;
 }
+div.educacion p{
+    color: white;
+}
 div.experiencias{
+    border-top: 1px solid black;
     grid-area: experiencias;
+}
+div.experiencias p{
+    color: white;
+
 }
